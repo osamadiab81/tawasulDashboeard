@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+  <title>تواصل للخدمات الإلكترونية</title>
+  <!-- Simple bar CSS -->
+  <link rel="stylesheet" href="css/simplebar.css">
+  <!-- Fonts CSS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Icons CSS -->
+  <link rel="stylesheet" href="css/feather.css">
+  <link rel="stylesheet" href="css/select2.css">
+  <link rel="stylesheet" href="css/dropzone.css">
+  <link rel="stylesheet" href="css/uppy.min.css">
+  <link rel="stylesheet" href="css/jquery.steps.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/quill.snow.css">
+  <!-- Date Range Picker CSS -->
+  <link rel="stylesheet" href="css/daterangepicker.css">
+  <!-- App CSS -->
+  <link rel="stylesheet" href="css/app-light.css" id="lightTheme">
+  <link rel="stylesheet" href="css/app-dark.css" id="darkTheme" disabled>
+  <style>
+    label.star.prev:before {
+      color: #4c6b31;
+    }
+  </style>
+</head>
+
+<body class="horizontal light rtl ">
+
+  <div class="wrapper">
+
+    <div class="col-12 col-lg-10 col-xl-10 m-auto">
+
+      <header class="blog-header bg-white py-3">
+        <div class="row flex-nowrap justify-content-center align-items-center">
+
+          <div class="col-12 text-center">
+            <img src="./assets/images/logo.svg" alt="logo" class="navbar-brand-img img-fluid">
+          </div>
+        </div>
+      </header>
+
+      <nav class="navbar navbar-icon-top navbar-expand-lg navbar-light bg-white border-bottom shadow">
+        <div class="container">
+          <div class="navbar-brand">
+            <img src="./assets/images/logomin.png" alt="logo" class="navbar-brand-img">
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-align-justify"></i>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <div class="m-auto">
+
+              <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">
+                    <i class="fa fa-home "></i>الرئيسية</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-gears "></i>الخدمات</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">استدعاء</a>
+                    <a class="dropdown-item" href="#">استفسار</a>
+                    <a class="dropdown-item" href="#">شكوى</a>
+                    <a class="dropdown-item" href="#">تظلم</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">طلب علاج</a>
+                    <a class="dropdown-item" href="#">طلب مساعدة جمعية خيرية</a>
+                    <a class="dropdown-item" href="#">طلب تعويض</a>
+                    <a class="dropdown-item" href="#">طلب ازالة والتريث</a>
+                    <a class="dropdown-item" href="#">طلب دراسة حالة</a>
+                    <a class="dropdown-item" href="#">طلب نقل جثمان</a>
+                    <a class="dropdown-item" href="#">طلب اعفاء من باقي محكومية</a>
+                    <a class="dropdown-item" href="#">طلب اعفاء من الابعاد</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">طلب خروج مؤقت لسجين</a>
+                    <a class="dropdown-item" href="#">طلب نقل سجين</a>
+                  </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-file ">
+                    </i>
+                    طلباتي
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">الطلبات الجديدة</a>
+                    <a class="dropdown-item" href="#">الطلبات المؤرشفة</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-hand-o-up ">
+                    </i>
+                    خدمات المدراء
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">الطلبات المقدمة</a>
+                    <a class="dropdown-item" href="#">إحصائيات</a>
+                    <a class="dropdown-item" href="#">مخططات بيانية</a>
+                    <a class="dropdown-item" href="#">المستخدمين</a>
+                  </div>
+                </li>
+
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa fa-globe">
+                    </i>
+                    English
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="navbar-brand-img my-2 my-lg-0" href="home.html">
+              <span class="avatar avatar-lg">
+                <img src="./assets/avatars/face-1.jpg" alt="logo" class="rounded-circle">
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+      </nav>
+    </div>
+
+    <main role="main" class="main-content">
+      <div class="container-fluid">
+
+
+        <div class="row">
+
+          <div class="col-12 col-lg-10 col-xl-10 m-auto">
+            <h5 class="mb-3">خدمة تواصل الإلكترونية </h5>
+            <p class="mb-5 text-center">التسجيل بخدمة تواصل الإلكترونية يوفر لكم إمكانية تقديم طلب أو شكوى أو استفسار أو اقتراح
+              وستقوم الجهة المختصة بإمارة منطقه مكة المكرمة بمعالجة طلبكم والرد عليه ، كما توفر الخدمة أيضاً خاصية
+              متابعة حالة الطلب حتى انتهاء الإجراء المتعلق به
+            </p>
+            <h5 class="mb-3">بيانات الحساب</h5>
+            <div class="row my-4">
+              <div class="col-md-4">
+                <div class="card shadow mb-4">
+                  <div class="card-body">
+                    <div class="row align-items-center">
+                      <div class="col-md-6">
+                        <small class="text-muted mb-1">تاريخ التسجيل</small>
+                      </div>
+                      <div class="col-md-6 text-right">
+                        <span class="badge badge-pill badge-secondary p-2">02 16 2021, 01:53 pm</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card shadow mb-4">
+                  <div class="card-body">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <small class="text-muted mb-1">حالة الحساب</small>
+                      </div>
+                      <div class="col-4 text-right">
+                        <span class="badge badge-pill badge-primary p-2">مفعل</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card shadow mb-4">
+                  <div class="card-body">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <small class="text-muted mb-1">حالة اخر طلب مقدم</small>
+                      </div>
+                      <div class="col-4 text-right">
+                        <span class="badge badge-pill badge-info p-2">لا يوجد</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-lg-10 col-xl-10 m-auto">
+            <h5 class="mb-3 text-center">الخدمات الإلكترونية
+
+            </h5>
+            <div class="row">
+
+              <div class="col mb-4">
+                <div class="card shadow">
+                  <div class="card-body">
+                    <div class="list-group list-group-flush my-n3">
+
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <div class="my-0 text-muted small">
+                              <a class="btn btn-primary btn-sm btn-block" href="#">استدعاء</a>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="stars">
+                              <label class="star star-5 " for="star-5-2"></label>
+                              <label class="star star-4 prev" for="star-4-2"></label>
+                              <label class="star star-3 prev" for="star-3-2"></label>
+                              <label class="star star-2 prev" for="star-2-2"></label>
+                              <label class="star star-1 prev" for="star-1-2"></label>
+                            </div>
+
+                          </div>
+                          <div class="col-auto">
+                            <small class="badge badge-pill badge-light text-muted">7 تقييمات</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <div class="my-0 text-muted small">
+                              <a class="btn btn-primary btn-sm btn-block" href="#">استفسار</a>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="">
+                              <div class="stars">
+                                <input class="star star-5" id="star-5-2" type="radio" name="star">
+                                <label class="star star-5" for="star-5-2"></label>
+                                <input class="star star-4" id="star-4-2" type="radio" name="star">
+                                <label class="star star-4" for="star-4-2"></label>
+                                <input class="star star-3" id="star-3-2" type="radio" name="star">
+                                <label class="star star-3" for="star-3-2"></label>
+                                <input class="star star-2" id="star-2-2" type="radio" name="star">
+                                <label class="star star-2" for="star-2-2"></label>
+                                <input class="star star-1" id="star-1-2" type="radio" name="star">
+                                <label class="star star-1" for="star-1-2"></label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <small class="badge badge-pill badge-light text-muted">7 تقييمات</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <div class="my-0 text-muted small">
+                              <a class="btn btn-primary btn-sm btn-block" href="#">شكوى</a>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="">
+                              <div class="stars">
+                                <input class="star star-5" id="star-5-2" type="radio" name="star">
+                                <label class="star star-5" for="star-5-2"></label>
+                                <input class="star star-4" id="star-4-2" type="radio" name="star">
+                                <label class="star star-4" for="star-4-2"></label>
+                                <input class="star star-3" id="star-3-2" type="radio" name="star">
+                                <label class="star star-3" for="star-3-2"></label>
+                                <input class="star star-2" id="star-2-2" type="radio" name="star">
+                                <label class="star star-2" for="star-2-2"></label>
+                                <input class="star star-1" id="star-1-2" type="radio" name="star">
+                                <label class="star star-1" for="star-1-2"></label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <small class="badge badge-pill badge-light text-muted">7 تقييمات</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <div class="my-0 text-muted small">
+                              <a class="btn btn-primary btn-sm btn-block" href="#">تظلم</a>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="">
+                              <div class="stars">
+                                <input class="star star-5" id="star-5-2" type="radio" name="star">
+                                <label class="star star-5" for="star-5-2"></label>
+                                <input class="star star-4" id="star-4-2" type="radio" name="star">
+                                <label class="star star-4" for="star-4-2"></label>
+                                <input class="star star-3" id="star-3-2" type="radio" name="star">
+                                <label class="star star-3" for="star-3-2"></label>
+                                <input class="star star-2" id="star-2-2" type="radio" name="star">
+                                <label class="star star-2" for="star-2-2"></label>
+                                <input class="star star-1" id="star-1-2" type="radio" name="star">
+                                <label class="star star-1" for="star-1-2"></label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <small class="badge badge-pill badge-light text-muted">7 تقييمات</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <div class="my-0 text-muted small">
+                              <a class="btn btn-primary btn-sm btn-block" href="#">طلب علاج</a>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="">
+                              <div class="stars">
+                                <input class="star star-5" id="star-5-2" type="radio" name="star">
+                                <label class="star star-5" for="star-5-2"></label>
+                                <input class="star star-4" id="star-4-2" type="radio" name="star">
+                                <label class="star star-4" for="star-4-2"></label>
+                                <input class="star star-3" id="star-3-2" type="radio" name="star">
+                                <label class="star star-3" for="star-3-2"></label>
+                                <input class="star star-2" id="star-2-2" type="radio" name="star">
+                                <label class="star star-2" for="star-2-2"></label>
+                                <input class="star star-1" id="star-1-2" type="radio" name="star">
+                                <label class="star star-1" for="star-1-2"></label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <small class="badge badge-pill badge-light text-muted">7 تقييمات</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <div class="my-0 text-muted small">
+                              <a class="btn btn-primary btn-sm btn-block" href="#">طلب مساعدة جمعية خيرية</a>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="">
+                              <div class="stars">
+                                <input class="star star-5" id="star-5-2" type="radio" name="star">
+                                <label class="star star-5" for="star-5-2"></label>
+                                <input class="star star-4" id="star-4-2" type="radio" name="star">
+                                <label class="star star-4" for="star-4-2"></label>
+                                <input class="star star-3" id="star-3-2" type="radio" name="star">
+                                <label class="star star-3" for="star-3-2"></label>
+                                <input class="star star-2" id="star-2-2" type="radio" name="star">
+                                <label class="star star-2" for="star-2-2"></label>
+                                <input class="star star-1" id="star-1-2" type="radio" name="star">
+                                <label class="star star-1" for="star-1-2"></label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <small class="badge badge-pill badge-light text-muted">7 تقييمات</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <div class="my-0 text-muted small">
+                              <a class="btn btn-primary btn-sm btn-block" href="#">طلب تعويض</a>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="">
+                              <div class="stars">
+                                <input class="star star-5" id="star-5-2" type="radio" name="star">
+                                <label class="star star-5" for="star-5-2"></label>
+                                <input class="star star-4" id="star-4-2" type="radio" name="star">
+                                <label class="star star-4" for="star-4-2"></label>
+                                <input class="star star-3" id="star-3-2" type="radio" name="star">
+                                <label class="star star-3" for="star-3-2"></label>
+                                <input class="star star-2" id="star-2-2" type="radio" name="star">
+                                <label class="star star-2" for="star-2-2"></label>
+                                <input class="star star-1" id="star-1-2" type="radio" name="star">
+                                <label class="star star-1" for="star-1-2"></label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <small class="badge badge-pill badge-light text-muted">7 تقييمات</small>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col mb-4">
+                <div class="card shadow">
+                  <div class="card-body">
+                    <div class="list-group list-group-flush my-n3">
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+
+                          <div class="col">
+                            <div class="my-0 text-muted small">
+                              <a class="btn btn-primary btn-sm btn-block" href="#">طلب ازالة والتريث</a>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="">
+                              <div class="stars">
+                                <input class="star star-5" id="star-5-2" type="radio" name="star">
+                                <label class="star star-5" for="star-5-2"></label>
+                                <input class="star star-4" id="star-4-2" type="radio" name="star">
+                                <label class="star star-4" for="star-4-2"></label>
+                                <input class="star star-3" id="star-3-2" type="radio" name="star">
+                                <label class="star star-3" for="star-3-2"></label>
+                                <input class="star star-2" id="star-2-2" type="radio" name="star">
+                                <label class="star star-2" for="star-2-2"></label>
+                                <input class="star star-1" id="star-1-2" type="radio" name="star">
+                                <label class="star star-1" for="star-1-2"></label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <small class="badge badge-pill badge-light text-muted">7 تقييمات</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+
+                          <div class="col">
+                            <div class="my-0 text-muted small">
+                              <a class="btn btn-primary btn-sm btn-block" href="#">طلب دراسة حالة</a>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="">
+                              <div class="stars">
+                                <input class="star star-5" id="star-5-2" type="radio" name="star">
+                                <label class="star star-5" for="star-5-2"></label>
+                                <input class="star star-4" id="star-4-2" type="radio" name="star">
+                                <label class="star star-4" for="star-4-2"></label>
+                                <input class="star star-3" id="star-3-2" type="radio" name="star">
+                                <label class="star star-3" for="star-3-2"></label>
+                                <input class="star star-2" id="star-2-2" type="radio" name="star">
+                                <label class="star star-2" for="star-2-2"></label>
+                                <input class="star star-1" id="star-1-2" type="radio" name="star">
+                                <label class="star star-1" for="star-1-2"></label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <small class="badge badge-pill badge-light text-muted">7 تقييمات</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+
+                          <div class="col">
+                            <div class="my-0 text-muted small">
+                              <a class="btn btn-primary btn-sm btn-block" href="#">طلب نقل جثمان </a>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="">
+                              <div class="stars">
+                                <input class="star star-5" id="star-5-2" type="radio" name="star">
+                                <label class="star star-5" for="star-5-2"></label>
+                                <input class="star star-4" id="star-4-2" type="radio" name="star">
+                                <label class="star star-4" for="star-4-2"></label>
+                                <input class="star star-3" id="star-3-2" type="radio" name="star">
+                                <label class="star star-3" for="star-3-2"></label>
+                                <input class="star star-2" id="star-2-2" type="radio" name="star">
+                                <label class="star star-2" for="star-2-2"></label>
+                                <input class="star star-1" id="star-1-2" type="radio" name="star">
+                                <label class="star star-1" for="star-1-2"></label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <small class="badge badge-pill badge-light text-muted">7 تقييمات</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+
+                          <div class="col">
+                            <div class="my-0 text-muted small">
+                              <a class="btn btn-primary btn-sm btn-block" href="#">طلب اعفاء من باقي محكومية </a>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="">
+                              <div class="stars">
+                                <input class="star star-5" id="star-5-2" type="radio" name="star">
+                                <label class="star star-5" for="star-5-2"></label>
+                                <input class="star star-4" id="star-4-2" type="radio" name="star">
+                                <label class="star star-4" for="star-4-2"></label>
+                                <input class="star star-3" id="star-3-2" type="radio" name="star">
+                                <label class="star star-3" for="star-3-2"></label>
+                                <input class="star star-2" id="star-2-2" type="radio" name="star">
+                                <label class="star star-2" for="star-2-2"></label>
+                                <input class="star star-1" id="star-1-2" type="radio" name="star">
+                                <label class="star star-1" for="star-1-2"></label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <small class="badge badge-pill badge-light text-muted">7 تقييمات</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+
+                          <div class="col">
+                            <div class="my-0 text-muted small">
+                              <a class="btn btn-primary btn-sm btn-block" href="#">طلب اعفاء من الابعاد </a>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="">
+                              <div class="stars">
+                                <input class="star star-5" id="star-5-2" type="radio" name="star">
+                                <label class="star star-5" for="star-5-2"></label>
+                                <input class="star star-4" id="star-4-2" type="radio" name="star">
+                                <label class="star star-4" for="star-4-2"></label>
+                                <input class="star star-3" id="star-3-2" type="radio" name="star">
+                                <label class="star star-3" for="star-3-2"></label>
+                                <input class="star star-2" id="star-2-2" type="radio" name="star">
+                                <label class="star star-2" for="star-2-2"></label>
+                                <input class="star star-1" id="star-1-2" type="radio" name="star">
+                                <label class="star star-1" for="star-1-2"></label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <small class="badge badge-pill badge-light text-muted">7 تقييمات</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+
+                          <div class="col">
+                            <div class="my-0 text-muted small">
+                              <a class="btn btn-primary btn-sm btn-block" href="#">طلب خروج مؤقت لسجين </a>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="">
+                              <div class="stars">
+                                <input class="star star-5" id="star-5-2" type="radio" name="star">
+                                <label class="star star-5" for="star-5-2"></label>
+                                <input class="star star-4" id="star-4-2" type="radio" name="star">
+                                <label class="star star-4" for="star-4-2"></label>
+                                <input class="star star-3" id="star-3-2" type="radio" name="star">
+                                <label class="star star-3" for="star-3-2"></label>
+                                <input class="star star-2" id="star-2-2" type="radio" name="star">
+                                <label class="star star-2" for="star-2-2"></label>
+                                <input class="star star-1" id="star-1-2" type="radio" name="star">
+                                <label class="star star-1" for="star-1-2"></label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <small class="badge badge-pill badge-light text-muted">7 تقييمات</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+
+                          <div class="col">
+                            <div class="my-0 text-muted small">
+                              <a class="btn btn-primary btn-sm btn-block " href="#">طلب نقل سجين </a>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="">
+                              <div class="stars">
+                                <input class="star star-5" id="star-5-2" type="radio" name="star">
+                                <label class="star star-5" for="star-5-2"></label>
+                                <input class="star star-4" id="star-4-2" type="radio" name="star">
+                                <label class="star star-4" for="star-4-2"></label>
+                                <input class="star star-3" id="star-3-2" type="radio" name="star">
+                                <label class="star star-3" for="star-3-2"></label>
+                                <input class="star star-2" id="star-2-2" type="radio" name="star">
+                                <label class="star star-2" for="star-2-2"></label>
+                                <input class="star star-1" id="star-1-2" type="radio" name="star">
+                                <label class="star star-1" for="star-1-2"></label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <small class="badge badge-pill badge-light text-muted">7 تقييمات</small>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-8 col-xl-10 m-auto">
+            <div class="my-4">
+              <h5 class="mb-3 text-center">حالات الطلبات المقدمة</h5>
+              <div class="card shadow mb-4">
+
+                <div class="card-body px-4">
+                  <div class="row">
+                    <div class="col-12 text-center mb-3">
+                      <p class="mb-1 small text-muted">المجموع الكلي</p>
+                      <span class="h3">0</span><br>
+                    </div>
+                  </div>
+                  <table class="table table-borderless mt-3 mb-1 mx-n1">
+                    <thead>
+                      <tr class="bg-secondary text-white">
+                        <th>الحالة</th>
+                        <th>النسبة المئوية</th>
+                        <th>العدد</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>لا توجد بيانات</td>
+                        <td> 15 %</td>
+                        <td>6</td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+                </div> <!-- .card-body -->
+              </div>
+            </div>
+            <!-- /.card-body -->
+          </div>
+
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-8 col-xl-10 m-auto">
+            <div class="my-4">
+
+              <h5 class="mb-3 text-center">نشاط الحساب مؤخرا</h5>
+              <table class="table border bg-white">
+                <thead>
+                  <tr class="bg-primary text-white">
+                    <th>الجهاز</th>
+                    <th>عنوان الجهاز</th>
+                    <th>اخر نشاط</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="col">
+                      <div>
+                        <svg style="width: 16px;" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                          <path
+                            d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                          </path>
+                        </svg>
+                        Chrome -
+                        Windows
+                      </div>
+                    </th>
+                    <td>127.0.0.1</td>
+                    <td>
+                      <span class="text-primary">هذا الجهاز</span>
+                    </td>
+                    <td>
+                      <a href="#" data-toggle="modal" data-target=".logout-other-browsers"
+                        class="btn btn-danger btn-sm">
+                        تسجيل الخروج من الأجهزة الاخرى
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+            <!-- /.card-body -->
+          </div>
+
+        </div>
+      </div>
+
+
+    </main> <!-- main -->
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-3 col-md">
+          <img src="./assets/images/footer_logo.png" class="img-fluid">
+          <small class="d-block mb-3 text-muted"> 2020 ©</small>
+        </div>
+        <div class="col-3 col-md">
+          <ul class="list-unstyled text-small">
+            <li><a href="#">عن إتمام</a></li>
+            <li><a href="#">الاخبار</a></li>
+            <li><a href="#">شروط الاستخدام</a></li>
+
+          </ul>
+        </div>
+        <div class="col-3 col-md">
+          <ul class="list-unstyled text-small">
+            <li><a href="#">مراكز التسجيل والتفعيل</a></li>
+            <li><a href="#">دليل المستخدم</a></li>
+            <li><a href="#">الأسئلة الشائعة</a></li>
+          </ul>
+
+        </div>
+        <div class="col-3 col-md">
+          <ul class="list-unstyled text-small">
+            <li><a href="#">سياسة الخصوصية</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+  </div>
+  <!-- .wrapper -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/simplebar.min.js"></script>
+  <script src='js/daterangepicker.js'></script>
+  <script src='js/jquery.stickOnScroll.js'></script>
+  <script src="js/tinycolor-min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/d3.min.js"></script>
+  <script src="js/topojson.min.js"></script>
+  <script src="js/datamaps.all.min.js"></script>
+  <script src="js/datamaps-zoomto.js"></script>
+  <script src="js/datamaps.custom.js"></script>
+  <script src="js/Chart.min.js"></script>
+  <script>
+    /* defind global options */
+    Chart.defaults.global.defaultFontFamily = base.defaultFontFamily;
+    Chart.defaults.global.defaultFontColor = colors.mutedColor;
+  </script>
+  <script src="js/gauge.min.js"></script>
+  <script src="js/jquery.sparkline.min.js"></script>
+  <script src="js/apexcharts.min.js"></script>
+  <script src="js/apexcharts.custom.js"></script>
+  <script src='js/jquery.mask.min.js'></script>
+  <script src='js/select2.min.js'></script>
+  <script src='js/jquery.steps.min.js'></script>
+  <script src='js/jquery.validate.min.js'></script>
+  <script src='js/jquery.timepicker.js'></script>
+  <script src='js/dropzone.min.js'></script>
+  <script src='js/uppy.min.js'></script>
+  <script src='js/quill.min.js'></script>
+
+
+</body>
+
+</html>
