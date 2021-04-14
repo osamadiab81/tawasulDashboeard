@@ -2741,7 +2741,11 @@ fieldset:disabled a.btn {
 .show > .btn-success.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(54, 184, 141, 0.5);
 }
-
+span.badge.badge-pill.active {
+  color: white;
+  border: 2px solid lightyellow;
+  box-shadow: rgb(0 0 0 / 45%) 0px 1px 3px 0px;
+}
 .btn-info {
   color: #ffffff;
   background-color: #17a2b8;
@@ -5984,7 +5988,6 @@ a.close.disabled {
   flex: 1 1 auto;
   padding: 1rem;
 }
-
 
 /* footer {
     border-top: 1px solid #4c6b31;
@@ -16969,7 +16972,6 @@ html {
     content: "\e92e";
   }
 }
-
 /* wizard */
 .wizard {
   margin: 0px;
@@ -17259,5 +17261,3 @@ path#XMLID_2_ {
     height: 100% !important;
   }
 }
-/* page Not Found Two */
-
