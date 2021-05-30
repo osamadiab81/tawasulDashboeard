@@ -1,0 +1,65 @@
+Package Report
+
+-----------------------------------------------------------------------------
+Document:
+Name: twasoul_Logo.ai
+Color Mode: CMYK color
+Color Profile: U.S. Web Coated (SWOP) v2
+Ruler Units: centimeters
+Artboard Dimensions: 12.9822 cm x 11.7906 cm
+Show Images in Outline Mode: OFF
+Highlight Substituted Fonts: OFF
+Highlight Substituted Glyphs: OFF
+Preserve Text Editability
+Simulate Colored Paper: OFF
+
+-----------------------------------------------------------------------------
+Spot Color Objects:
+
+-----------------------------------------------------------------------------
+Missing Fonts:NONE
+
+-----------------------------------------------------------------------------
+Protected Fonts that were not packaged:NONE
+
+-----------------------------------------------------------------------------
+Fonts:
+AvantGarde-Book (TrueType)
+Hacen Extender Bd (TrueType)
+Hacen Promoter Broadcast (TrueType)
+Hacen Promoter Lt (TrueType)
+Farsi Simple Bold (OTF)
+ Abdoullah Ashgar EL-kharef (TrueType)
+Ara Hamah City (OTF)
+Ara ES Taqniya (OTF)
+Alnaqaaa R (OTF)
+Air Strip Arabic (OTF)
+Arbaeen (TrueType)
+Adobe Arabic (OTF)
+Adobe Arabic SHIN Stout Bold (OTF)
+?Bustan Bold (TrueType)
+djadli_sarkha (TrueType)
+Niagara Solid (OTF)
+Candara (OTF)
+iwan zaza personal Regular (TrueType)
+HSN Shahd Bold (TrueType)
+HSN Omar (TrueType)
+Mokhtar Font (TrueType)
+Motairah-Regular (TrueType)
+HSN Golden (TrueType)
+Shekari Font (OTF)
+Sheba  (TrueType)
+Tajawal-Medium (TrueType)
+Tajawal (TrueType)
+
+-----------------------------------------------------------------------------
+Embedded Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Missing Links:
+NONE
+
+-----------------------------------------------------------------------------
+Linked Images:
+NONE
